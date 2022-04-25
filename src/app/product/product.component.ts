@@ -7,6 +7,7 @@ import {Product} from './Product';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+  selectedId = -1;
   products: Product[] = [
     {
       id: 1,
@@ -27,6 +28,9 @@ export class ProductComponent implements OnInit {
     },
   ];
 
+  selectLine(id){
+    this.selectedId = id;
+  }
   constructor() { }
 
   ngOnInit() {
