@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { PetComponent } from './pet/pet.component';
 import { ProductComponent } from './product/product.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PetComponent,
     ProductComponent,
+    CalculatorComponent,
   ],
     imports: [
         BrowserModule,

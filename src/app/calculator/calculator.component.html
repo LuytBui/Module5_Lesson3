@@ -1,0 +1,11 @@
+<div class="container mt-3 gap-3">
+  <input type="number" [(ngModel)]="firstOperand" (change)="calculate()">
+  <select name="" [(ngModel)]="operator" (change)="calculate()">
+    <option value="ADD"> + </option>
+    <option value="SUBTRACT"> - </option>
+    <option value="MULTIPLY"> * </option>
+    <option value="DIVIDE"> / </option>
+  </select>
+  <input type="number" [(ngModel)]="secondOperand" (change)="calculate()">
+  <span> {{result}}</span>
+</div>
